@@ -134,7 +134,7 @@ namespace Libs
                 }
                 else if ((rnd >= 25 && rnd <= 50) | (rnd >= 75 && rnd <= 99))
                 {
-                    gNew[i] = ga[rndi];
+                    gNew[i] = gb[rndi];
                 }
             }
             Console.ForegroundColor = ConsoleColor.White;

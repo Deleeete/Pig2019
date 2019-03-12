@@ -51,7 +51,7 @@ namespace 猪圈2019
             else if (i == "n" | i == "N")
             {
                 File.Delete(bornname + ".pig");
-                Style.WriteSuccess("成功杀死了不合格的种猪"+bornname); Console.WriteLine("\n按任意键继续...");
+                Style.WriteSuccess("成功杀死了不合格的种猪" + bornname); Console.WriteLine("\n按任意键继续...");
                 Console.ReadKey();
                 goto Born;
             }
@@ -86,7 +86,7 @@ namespace 猪圈2019
                 if (!eb) { Console.ReadKey(); Console.Clear(); goto Cross; }
                 bool ec = Function.ExistCheck(prt[1]);
                 if (!ec) { Console.ReadKey(); Console.Clear(); goto Cross; }
-                if (File.Exists(prt[2]+".pig")) { Style.WriteError("子代"+prt[2]+"已经存在"); Console.WriteLine("按任意键重新输入..."); Console.ReadKey(); goto Cross; }
+                if (File.Exists(prt[2] + ".pig")) { Style.WriteError("子代" + prt[2] + "已经存在"); Console.WriteLine("按任意键重新输入..."); Console.ReadKey(); goto Cross; }
             }
             catch { Style.WriteError("\n发生错误，检查分隔符是否正确。"); Console.WriteLine("按任意键重新输入..."); Console.ReadKey(); goto Cross; }
             P.Cross(prt[0], prt[1], prt[2]);
